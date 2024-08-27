@@ -33,19 +33,21 @@ spring:
     enabled: false
     baselineOnMigrate: true
     fail-on-missing-locations: false
+  profiles:
+    active: dev
 
-  datasource:
-    url: "jdbc:postgresql://localhost:5432/ilumina?currentSchema=fhir"
-    username: fhiruser
-    password: fhir123
-    driverClassName: org.postgresql.Driver
-    # database connection pool size
-    hikari:
-      maximum-pool-size: 20
-      minimum-idle: 5
-      idle-timeout: 30000
-      max-lifetime: 1800000
-      connection-timeout: 30000
+  # datasource:
+  #   url: "jdbc:postgresql://localhost:5432/ilumina?currentSchema=fhir"
+  #   username: fhiruser
+  #   password: fhir123
+  #   driverClassName: org.postgresql.Driver
+  #   # database connection pool size
+  #   hikari:
+  #     maximum-pool-size: 20
+  #     minimum-idle: 5
+  #     idle-timeout: 30000
+  #     max-lifetime: 1800000
+  #     connection-timeout: 30000
   jpa:
     properties:
       hibernate.format_sql: false
