@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: "jdbc:postgresql://localhost:5432/ilumina?currentSchema=fhir"
-    username: fhiruser
-    password: fhir123
+    url: "jdbc:postgresql://ilumina-db-uat-instance-1.cpcu8wm0200j.ap-south-1.rds.amazonaws.com:5432/iluminauat?currentSchema=fhir"
+    username: uat
+    password: Iluminauat*123
     driverClassName: org.postgresql.Driver
     # database connection pool size
     hikari:
