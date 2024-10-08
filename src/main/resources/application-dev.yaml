@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: "jdbc:postgresql://ilumina-db-dev-qa-instance-1.cl4qq8c0s5we.ap-south-1.rds.amazonaws.com:5432/iluminadev?currentSchema=fhir"
+    url: "jdbc:postgresql://ilumina-dev-qa-server-db.cl4qq8c0s5we.ap-south-1.rds.amazonaws.com:5432/iluminadev?currentSchema=fhir"
     username: dev
     password: Iluminadev*123
     driverClassName: org.postgresql.Driver
